@@ -206,7 +206,7 @@ p {
 
 /* Hero Section */
 #hero {
-  background-image: url(https://nssk1999.github.io/covid19/assets/hospital.jpg);
+  background-image: url("./assets/hospital.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
