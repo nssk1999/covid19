@@ -38,7 +38,8 @@ function initMap() {
   //#######################################################################################
   class Hospital {
     constructor(item, image) {
-      this.contentString = `<h2>${item["name"]}</h2> <br>
+      this.contentString = `<h2>${item["name"]}</h2> 
+      <h3>${item["area"]}</h3>
       <table>
       <tbody>
         <tr>
@@ -87,7 +88,7 @@ function initMap() {
         },
         label: {
           text: item["abeds"].toLocaleString(),
-          fontSize: "30px",
+          fontSize: "2.5em",
         },
       });
       this.marker.addListener("click", () => {
@@ -95,16 +96,23 @@ function initMap() {
       });
     }
   }
+  var image = "pmarker.svg";
   var ghospitals = new Array();
-  var phospitals = new Array();
-  for (var i = 0; i < hps["Ghptls"].length; i++) {
-    var item = hps["Ghptls"][i];
-    const image = "gmarker.svg";
-    ghospitals[i] = new Hospital(item, image);
-  }
-  for (var i = 0; i < hps["Phptls"].length; i++) {
-    var item = hps["Phptls"][i];
-    const image = "pmarker.svg";
-    phospitals[i] = new Hospital(item, image);
-  }
+  const _displayhps = (data) => {
+    var i = 0;
+    data["hptls"].forEach((item) => {
+      if (item["type"] == "private") image = "./assets/pmarker.svg";
+      else image = "./assets/gmarker.svg";
+      ghospitals[i] = new Hospital(item, image);
+      i++;
+    });
+  };
+  const urili = "https://nssk1999.github.io/covid19/hps.json";
+  const geths = () => {
+    fetch(urili)
+      .then((response) => response.json())
+      .then((data) => _displayhps(data))
+      .catch((error) => console.error("Unable to get items.", error));
+  };
+  geths();
 }
