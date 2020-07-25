@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="hospital.css">
+  <title>My Website</title>
+</head>
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero"><h1><span>C</span>ovid<span>-19</span> India</h1></a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger"><div class="bar"></div></div>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#services">Live Tracker</a></li>
+            <li><a href="hospitals.html">Hospitals</a></li>
+            <li><a href="#about">Precautions</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+  <!-- Hero Section  -->
+<section id="hero">
+    <div class="hero container">
+      <div>
+        <h5>Covid-19 <span></span></h1>
+        <h5>Live <span></span></h1>
+        <h5>Latest info <span></span></h1><br><br>
+        <h5 align="center">Hospital Info</h2> 
+        <a href="#w3-container" type="button" class="cta">Clicke Here</a>
+      </div>
+    </div>
+  </section>
+
+<div class="w3-container" id=w3-container>
+  <h2 align="center">Hospital in Nearby Areas</h2>
+
+  <table class="w3-table-all w3-hoverable">
+    <thead>
+      <tr class="w3-light-grey">
+        <th>Hospital Name</th>
+        <th>Area</th>
+        <th>No.of Beds Available</th>
+        <th>Contact No.</th>
+      </tr>
+    </thead>
+    <tr>
+      <td>Gandhi Hospital</td>
+      <td>Secuderabad,Telangana</td>
+      <td>1068</td>
+      <td>989245897</td>
+    </tr>
+    <tr>
+      <td>NIMS Hospital</td>
+      <td>Punjagutta,Hyderabad</td>
+      <td>1400</td>
+      <td>654574545</td>
+    </tr>
+    <tr>
+      <td onclick="window.location.href='www.google.com';">Telanagan Institude of Medical Sciences</td>
+      <td>Gachibowli,Hyderabad</td>
+      <td>1500</td>
+      <td>244252585</td>
+    </tr>
+  </table>
+</div>
+
+
+
+
+
+  <script src="./hospital.js"></script>
+  
+</body>
+</html>
+
