@@ -10,20 +10,20 @@
       "type": "small",
       "title": "Check-out more about Covid-19 Telangana",
       "url": "/",
-      "image": "/assets/virus.png"
+      "image": "./assets/virus.png"
     },
     {
       "type": "landscape",
       "title": "Know more about my projects",
-      "url": "https://nssk1999.github.io/covid19/pages/hospital.html",
-      "image": "/assets/sct.png",
+      "url": "./hospital.html",
+      "image": "./assets/sct.png",
       "category": "Isolated Hospitals"
     },
     {
       "type": "portrait",
       "title": "Know more about my Designs",
-      "url": "https://nssk1999.github.io/covid19/pages/amp_story.html",
-      "image": "/assets/1.png",
+      "url": "./amp_story.html",
+      "image": "./assets/1.png",
       "category": "Precautions"
     },
     {
@@ -31,7 +31,7 @@
       "links": [
         {
           "text": "Back to Home Page",
-          "url": "/"
+          "url": "./"
         }
       ]
     }
