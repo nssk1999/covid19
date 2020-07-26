@@ -38,7 +38,6 @@ function _displayhs(data) {
 		  <td>${item["phone"]}</td>
 		</tr>
 		  `;
-    document.getElementsByTagName("tbody").innerHTML += rw;
     document.getElementById("h-data").innerHTML += rw;
   });
 }
