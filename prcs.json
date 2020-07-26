@@ -14,14 +14,14 @@
     },
     {
       "type": "landscape",
-      "title": "Know more about my projects",
+      "title": "Know more about Isolated Hospitals",
       "url": "./hospital.html",
       "image": "./assets/sct.png",
       "category": "Isolated Hospitals"
     },
     {
       "type": "portrait",
-      "title": "Know more about my Designs",
+      "title": "Know more about Precautions",
       "url": "./amp_story.html",
       "image": "./assets/1.png",
       "category": "Precautions"
