@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 #map {
-  height: 600px;
+  height: 500px;
   width: 100%;
   align-items: center;
   /* display: none; */
@@ -206,7 +206,7 @@ p {
 
 /* Hero Section */
 #hero {
-  background-image: url("../assets/hospital1.jpg");
+  background-image: url(../assets/hospital1.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
